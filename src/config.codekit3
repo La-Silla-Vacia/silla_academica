@@ -25,11 +25,55 @@
 		"oAP": "\/css\/styles.css.map",
 		"oF": 0
 		},
+	"\/images\/coverfoto.jpg": {
+		"ft": 16384,
+		"iS": 331214,
+		"oA": 0,
+		"oAP": "\/images\/coverfoto.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/logo_sillacademica.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/logo_sillacademica.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/images\/logonal.png": {
+		"ft": 32768,
+		"iS": 49389,
+		"oA": 0,
+		"oAP": "\/images\/logonal.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/scss\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/scss\/styles.scss": {
 		"aP": 1,

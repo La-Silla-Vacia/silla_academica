@@ -4,17 +4,124 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Silla Académica</title>
+
+  <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet">
+  <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/La-Silla-Vacia/lsv-interactive/master/misc/lsv-before-bootstrap.css"/>
+  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all"/>
+  <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/La-Silla-Vacia/lsv-interactive/master/misc/lsv-after-bootstrap.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<h1>Hello, world!</h1>
+<div id="wrapper">
+  <div class="navbar-header">
+
+    <button data-target="#navbarCollapseSeciones" data-toggle="collapse"
+            class="navbar-toggle collapsed boton-secciones">
+      <div class="pull-left">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+      <div class="labelsecc hidden-xs">SECCIONES</div>
+    </button>
+
+
+    <div class="divlogo">
+      <img src="./images/logo_sillacademica.svg">
+    </div>
+    <div class="tools">
+      <div class="search">
+        <button id="boton-buscador">Buscar</button>
+      </div>
+      <a class="login-link" href="/user/login?destination=portada">Login</a>
+      <span>|</span>
+      <a href="/user/register">Registrarse</a>
+    </div>
+    <div class="search-resp">
+      <button id="boton-buscador-resp">Buscar</button>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="cover">
+    <div class="grayscale-background" style="background-image: url('../images/coverfoto.jpg')"></div>
+    <div class="cover__info">
+      <div>
+        <div class="cover__info__coverdate">
+          Lunes 15 de mayo
+        </div>
+
+        <h3 class="cover__info__covertitle">
+          A Etnografías contemporáneas III: las narrativas en la investigación antropológica
+        </h3>
+
+        <div class="cover__info__coverauthor">
+          Myriam Jimeno, Carolina Pabón, Daniel Varela e Ingrid Díaz
+        </div>
+      </div>
+
+      <footer class="cover__info__footer">
+        <img class="cover__logo" src="./images/logonal.png">
+        <span class="cover__more">Más información ></span>
+      </footer>
+    </div>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <div class="eventcontainer">
+    <div class="row">
+      <article class="col-sm-3 event">
+        <div class="event__inner">
+          <div class="event__date">Lunes 1 de mayo</div>
+          <h3 class="event__title">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</h3>
+          <div class="event__university">Pontificia Universidad Javeriana</div>
+          <span class="event__more">Más información ></span>
+        </div>
+      </article>
+
+      <article class="col-sm-3 event">
+        <div class="event__inner">
+          <div class="event__date">Lunes 1 de mayo</div>
+          <h3 class="event__title">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</h3>
+          <div class="event__university">Pontificia Universidad Javeriana</div>
+          <span class="event__more">Más información ></span>
+        </div>
+      </article>
+
+      <article class="col-sm-3 event">
+        <div class="event__inner">
+          <div class="event__date">Lunes 1 de mayo</div>
+          <h3 class="event__title">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</h3>
+          <div class="event__university">Pontificia Universidad Javeriana</div>
+          <span class="event__more">Más información ></span>
+        </div>
+      </article>
+
+      <article class="col-sm-3 event">
+        <div class="event__inner">
+          <div class="event__date">Lunes 1 de mayo</div>
+          <h3 class="event__title">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</h3>
+          <div class="event__university">Pontificia Universidad Javeriana</div>
+          <span class="event__more">Más información ></span>
+        </div>
+      </article>
+      >>>
+    </div>
+  </div>
+
+
+</div>
 
 
 </body>
