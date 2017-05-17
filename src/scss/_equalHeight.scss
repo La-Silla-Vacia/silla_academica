@@ -1,0 +1,9 @@
+.equalHeight {
+  display: flex;
+  flex-wrap: wrap;
+
+  > article,
+  > div {
+    margin-bottom: 1em;
+  }
+}

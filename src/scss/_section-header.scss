@@ -2,9 +2,10 @@
   border-bottom: 1px solid $secondary-color;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 400;
   font-size: .75em;
-
+  margin-bottom: 1.5em;
 
   h3{
     text-transform: uppercase;
@@ -15,5 +16,8 @@
   }
 
   &__submit{
+    span{
+      margin-right: 1em;
+    }
   }
 }

@@ -56,11 +56,45 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/logonal2.png": {
+		"ft": 32768,
+		"iS": 19777,
+		"oA": 0,
+		"oAP": "\/images\/logonal2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/userimage.jpg": {
+		"ft": 16384,
+		"iS": 10881,
+		"oA": 0,
+		"oAP": "\/images\/userimage.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/scss\/_button.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_button.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/scss\/_cover.scss": {
 		"aP": 0,
@@ -71,6 +105,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/_cover.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_equalHeight.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_equalHeight.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -139,12 +186,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/scss\/_section-header.scss___jb_tmp___": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/scss\/_section-header.scss___jb_tmp___",
-		"oF": 0
 		},
 	"\/scss\/_variables.scss": {
 		"aP": 0,

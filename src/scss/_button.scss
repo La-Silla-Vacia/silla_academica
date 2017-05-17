@@ -1,0 +1,25 @@
+.button {
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  color: #fff;
+  padding: .7em 1.5em;
+  border-radius: .4em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 500;
+  font-size: .9em;
+  &:hover {
+    border: 1px solid $main-color;
+    background: transparent;
+    color: $main-color;
+  }
+
+  &--lighter {
+    border: 1px solid $secondary-color;
+    background: transparent;
+    color: $secondary-color;
+    padding: .7em 1.5em;
+    font-weight: 600;
+
+  }
+}
