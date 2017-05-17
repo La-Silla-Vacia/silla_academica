@@ -5,17 +5,26 @@
   padding: 0;
 }
 
-.navbar-header {
+.main-header {
   margin: 0;
-  padding-bottom: 5px;
-  padding-right: 30px;
   background-color: $main-color;
   width: 100%;
+  display: flex;
+  padding: .5em 2em;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 80%;
+    max-width: 17em;
+    margin-top: 0.25em;
+  }
 }
 
 .boton-secciones.collapsed {
   background-color: transparent !important;
-  margin-left: 20px;
+  margin: 0;
+  padding: 0;
   .labelsecc {
     color: white;
   }
@@ -35,7 +44,7 @@
 }
 
 .tools {
-  padding: 15px 0 8px;
+  padding: 0;
   a {
     color: white;
   }
@@ -46,7 +55,7 @@
   }
 }
 
-.grayscale-background{
+.grayscale-background {
   background: no-repeat center;
   background-size: cover;
   position: absolute;
@@ -67,7 +76,7 @@
   flex-direction: column;
 
   &__info {
-    background: rgba(255,255,255,.3);
+    background: rgba(255, 255, 255, .3);
     min-height: 100%;
     width: 450px;
     float: right;
@@ -79,14 +88,14 @@
     justify-content: space-between;
     flex-grow: 1;
 
-    &__coverdate{
+    &__coverdate {
       font-size: 1.8em;
       font-weight: 300;
       color: #39d8e3;
       margin-bottom: .4em;
     }
 
-    &__covertitle{
+    &__covertitle {
       font-size: 2.5em;
       color: white;
       font-weight: 600;
@@ -94,7 +103,7 @@
       margin-bottom: .4em;
     }
 
-    &__coverauthor{
+    &__coverauthor {
       color: white;
       font-weight: 300;
     }
@@ -106,10 +115,10 @@
       justify-content: space-between;
     }
   }
-  &__logo{
+  &__logo {
     width: 200px;
   }
-  &__more{
+  &__more {
     float: right;
     color: white;
     font-weight: 400;
@@ -117,11 +126,14 @@
   }
 }
 
-.eventcontainer{
+.eventcontainer {
   background: #e9eef1;
   padding: 3.5em;
-}
 
+  .row {
+    position: relative;
+  }
+}
 
 .event {
   font-family: 'Lato', sans-serif;
@@ -131,14 +143,14 @@
     padding: 2em;
   }
 
-  &__date{
+  &__date {
     font-size: 1.3em;
     font-weight: 300;
     color: #424c5c;
     margin-bottom: .5em;
   }
 
-  &__title{
+  &__title {
     font-weight: 600;
     color: #424c5c;
     display: block; /* Fallback for non-webkit */
@@ -154,16 +166,31 @@
     text-overflow: ellipsis;
   }
 
-  &__university{
+  &__university {
     color: $main-color;
     font-size: .75em;
     margin: 1em 0 2em 0;
   }
 
-  &__more{
+  &__more {
     float: right;
     color: #4386ff;
     font-weight: 400;
     font-size: .75em;
   }
+}
+
+i {
+  border: solid #95aec9;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.right {
+  transform: rotate(-45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
 }
