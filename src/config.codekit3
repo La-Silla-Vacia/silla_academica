@@ -88,6 +88,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/_expert.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_expert.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/_general.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -113,6 +126,25 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/scss\/_section-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_section-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_section-header.scss___jb_tmp___": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/scss\/_section-header.scss___jb_tmp___",
+		"oF": 0
 		},
 	"\/scss\/_variables.scss": {
 		"aP": 0,

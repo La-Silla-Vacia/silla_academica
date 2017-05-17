@@ -1,0 +1,19 @@
+.section-title{
+  border-bottom: 1px solid $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: .75em;
+
+
+  h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8em;
+    color: $secondary-color;
+    margin-bottom: .2em;
+  }
+
+  &__submit{
+  }
+}
