@@ -1,0 +1,70 @@
+.grayscale-background {
+  background: no-repeat center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  opacity: .5;
+}
+
+.cover {
+  width: 100%;
+  min-height: 420px;
+  position: relative;
+  background: black;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  &__info {
+    background: rgba(255, 255, 255, .3);
+    min-height: 100%;
+    width: 450px;
+    float: right;
+    padding: 3em;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    &__coverdate {
+      font-size: 1.8em;
+      font-weight: 300;
+      color: #39d8e3;
+      margin-bottom: .4em;
+    }
+
+    &__covertitle {
+      font-size: 2.5em;
+      color: white;
+      font-weight: 600;
+      line-height: 1em;
+      margin-bottom: .4em;
+    }
+
+    &__coverauthor {
+      color: white;
+      font-weight: 300;
+    }
+
+    &__footer {
+      margin-top: 2em;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+  &__logo {
+    width: 200px;
+  }
+  &__more {
+    float: right;
+    color: white;
+    font-weight: 400;
+    font-size: .7em;
+  }
+}

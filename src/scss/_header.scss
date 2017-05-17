@@ -1,0 +1,49 @@
+.main-header {
+  margin: 0;
+  background-color: $main-color;
+  width: 100%;
+  display: flex;
+  padding: .5em 2em;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 80%;
+    max-width: 17em;
+    margin-top: 0.25em;
+  }
+}
+
+.boton-secciones.collapsed {
+  background-color: transparent !important;
+  margin: 0;
+  padding: 0;
+  .labelsecc {
+    color: white;
+  }
+}
+
+.boton-secciones .icon-bar {
+  background-color: #fff !important;
+}
+
+.search button {
+  border: none;
+  height: 30px;
+  width: 50px;
+  background: url(http://lasillavacia.com/sites/all/themes/lasillavacia/images/search.svg) no-repeat center center;
+  background-size: 25px;
+  text-indent: -9999px;
+}
+
+.tools {
+  padding: 0;
+  a {
+    color: white;
+  }
+
+  span {
+    padding: 0 10px;
+    color: white;
+  }
+}
