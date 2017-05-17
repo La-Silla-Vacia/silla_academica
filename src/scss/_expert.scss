@@ -47,4 +47,24 @@
       width: 10em;
     }
   }
+
 }
+
+.owl-pagination {
+  margin-top: 1em;
+  text-align: center;
+
+
+  &__owl-page {
+    width: 1em;
+    height: 1em;
+    border: 1px solid $secondary-color;
+    display: inline-block;
+    border-radius: 50%;
+    &:hover {
+      background: $secondary-color;
+      border: 1px solid $secondary-color;
+    }
+  }
+}
+
