@@ -25,6 +25,16 @@
 		"oAP": "\/css\/styles.css.map",
 		"oF": 0
 		},
+	"\/images\/articleportada.jpg": {
+		"ft": 16384,
+		"iS": 152198,
+		"oA": 0,
+		"oAP": "\/images\/articleportada.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/coverfoto.jpg": {
 		"ft": 16384,
 		"iS": 331214,
@@ -170,6 +180,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_historias.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_historias.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

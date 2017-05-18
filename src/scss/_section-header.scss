@@ -1,5 +1,5 @@
 .section-title{
-  border-bottom: 1px solid $secondary-color;
+  border-bottom: 1px solid $article-border-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,11 @@
     font-weight: 900;
     font-size: 1.3em;
     font-family: 'Lato',Helvetica;
-    color: $expert-content-color;
-    margin-bottom: .2em;
+    color: $article-content-color;
+    margin: 0 0 1.3em 1.3em;
   }
+}
+
+.border_section {
+  border-bottom: 1px solid $article-border-color;
 }
