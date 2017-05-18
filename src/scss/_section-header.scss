@@ -20,4 +20,12 @@
       margin-right: 1em;
     }
   }
+
+  h4{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8em;
+    color: $secondary-color;
+    margin-bottom: .2em;
+  }
 }
