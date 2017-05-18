@@ -18,14 +18,16 @@
   &__submit{
     span{
       margin-right: 1em;
+      color: $expert-content-color;
     }
   }
 
   h4{
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1.8em;
-    color: $secondary-color;
+    font-weight: 900;
+    font-size: 1.3em;
+    font-family: 'Lato',Helvetica;
+    color: $expert-content-color;
     margin-bottom: .2em;
   }
 }
