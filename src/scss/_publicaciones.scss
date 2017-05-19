@@ -1,0 +1,104 @@
+.publicaciones{
+  margin: 5em auto;
+  width: 100%;
+  max-width: 70em;
+
+  article{
+    border-bottom: 1px solid $article-border-color;
+    padding: 5em 0;
+    display: flex;
+  }
+
+  article:first-child{
+    padding: 0 0 5em;
+  }
+
+  article:last-child{
+    border-bottom: 0;
+  }
+
+  &__coverbook{
+    padding: 0;
+  }
+
+  &__infobook{
+    padding-left: 4em;
+
+    ul {
+      margin:0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li{
+      display: inline;
+      padding: 0 1.5em;
+      border-right: 1px solid $tag-book-color;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    li a{
+      text-decoration: none;
+      color: $tag-book-color;
+    }
+
+    li:first-child{
+      padding-left: 0;
+    }
+
+    li:last-child{
+      border: 0;
+    }
+
+    h2{
+      font-weight: 700;
+      line-height: 1.3em;
+    }
+
+    p{
+      font-family: 'Roboto Slab', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 21px;
+      margin: 0;
+      margin-top: 1.3em;
+
+    }
+
+    span{
+      margin-left: 1.5em;
+      font-family: Roboto;
+      font-size: 16px;
+
+      .usernametext{
+        text-transform: uppercase;
+        margin-left: 0;
+      }
+    }
+
+    .read{
+      margin-top: .7em;
+
+      span{
+        margin-left: 0;
+      }
+    }
+
+    .share-container{
+      float: left;
+      margin-top: 1em;
+      padding-left: 1em;
+      border-left: 1px solid $tag-book-color;
+    }
+
+    .redes{
+      display: inline;
+      font-weight: 500;
+      font-size: 15px;
+      border:0;
+      padding: 0;
+    }
+
+  }
+}

@@ -41,19 +41,18 @@
     font-weight: 400;
     font-size: .75em;
   }
-}
 
-i {
-  border: solid #95aec9;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  width: 20px;
-  height: 20px;
-}
-
-.right {
-  transform: rotate(-45deg) translateY(-50%);
-  position: absolute;
-  top: 50%;
+  &__arrow {
+    border: solid #95aec9;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    &--right {
+      transform: rotate(-45deg) translateY(-50%);
+      position: absolute;
+      top: 50%;
+    }
+  }
 }
