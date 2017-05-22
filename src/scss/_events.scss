@@ -18,8 +18,7 @@
     color: #424c5c;
     display: block; /* Fallback for non-webkit */
     display: -webkit-box;
-    max-width: 400px;
-    height: $font-size*$lines-to-show; /* Fallback for non-webkit */
+    height: 2em; /* Fallback for non-webkit */
     margin: 0 auto;
     font-size: $font-size;
     line-height: 1;
@@ -32,14 +31,16 @@
   &__university {
     color: $main-color;
     font-size: .75em;
-    margin: 1em 0 2em 0;
+    margin: 1em 0 1em 0;
   }
 
   &__more {
-    float: right;
+    text-align: right;
     color: #4386ff;
     font-weight: 400;
     font-size: .75em;
+    width: 100%;
+    display: inline-block;
   }
 
   &__arrow {
@@ -56,3 +57,37 @@
     }
   }
 }
+
+@media screen and (max-width: $mdMax) {
+  .event__inner{
+    padding: 1.2em;
+  }
+
+  .event__date{
+    font-size: 1em;
+  }
+
+  .event__title{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: $smMax) {
+
+  .event__title{
+    height: auto;
+  }
+
+  .event:not(:first-child) {
+    display: none;
+  }
+
+  .event__arrow{
+    display: none;
+  }
+
+  .row article{
+    padding: 0;
+  }
+}
+

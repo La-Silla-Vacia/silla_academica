@@ -11,7 +11,17 @@
     width: 80%;
     max-width: 17em;
     margin-top: 0.25em;
+
+    @media screen and (max-width: $smMax) {
+      width: 55%;
+    }
   }
+
+  @media screen and (max-width: $mdMax) {
+    padding: .05em 0em .05em 1em;
+  }
+
+
 }
 
 .boton-secciones.collapsed {
@@ -27,7 +37,8 @@
   background-color: #fff !important;
 }
 
-.search button {
+.search button,
+.search-resp button {
   border: none;
   height: 30px;
   width: 50px;
@@ -47,3 +58,4 @@
     color: white;
   }
 }
+

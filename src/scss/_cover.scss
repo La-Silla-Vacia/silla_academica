@@ -58,9 +58,11 @@
       justify-content: space-between;
     }
   }
+
   &__logo {
     width: 200px;
   }
+
   &__more {
     float: right;
     color: white;
@@ -68,3 +70,36 @@
     font-size: .7em;
   }
 }
+
+@media screen and (max-width: $mdMax) {
+  .cover__info__covertitle {
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (max-width: $smMax) {
+  .cover{
+    min-height: 250px;
+  }
+
+  .cover__info {
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    padding: 1.5em;
+  }
+
+  .cover__info__coverdate{
+    font-size: 1.2em;
+  }
+
+  .cover__info__covertitle {
+    font-size: 2em;
+  }
+
+  .cover__logo{
+    width: 150px;
+  }
+
+
+}
+

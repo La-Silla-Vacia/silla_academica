@@ -1,5 +1,5 @@
 $main-color: #5054b0;
-$font-size: 24px;
+$font-size: 1.75em;
 $lines-to-show: 2;
 $secondary-color: #95aec9;
 $border-color: #949698;
@@ -7,3 +7,9 @@ $expert-content-color: #424c5c;
 $article-content-color: #444848;
 $article-border-color: #ddd;
 $tag-book-color: #7d8488;
+
+
+// Breakpoints
+$lgMax: 1200px;
+$mdMax: 992px;
+$smMax: 768px;

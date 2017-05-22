@@ -15,3 +15,15 @@
 #footer {
   margin-top: 0;
 }
+
+@media screen and (max-width: $mdMax) {
+  .row-container {
+    padding: 2em 2em;
+  }
+}
+
+@media screen and (max-width: $smMax) {
+  .row-container {
+    padding: 1.5em 1em;
+  }
+}
