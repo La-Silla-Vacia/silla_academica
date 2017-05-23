@@ -1,3 +1,7 @@
+.article-container{
+  padding: 2.5em 2em;
+}
+
 .items{
   margin: 2em auto;
   width: 100%;
@@ -6,7 +10,7 @@
   article{
     border-bottom: 1px solid $article-border-color;
     padding: 2em 0;
-    display: flex;
+    //display: flex;
   }
 
   article:first-child{
@@ -62,4 +66,46 @@
 .more{
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: $mdMax) {
+
+  .items {
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  .stats{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: $smMax) {
+
+  .items__portada{
+    padding: 2em;
+  }
+
+  .items__item-info{
+    padding: 0 2em;
+  }
+
+  .stats{
+    display: none;
+  }
+
+  .more-news {
+    padding: .5em 1em;
+    border: 1px solid;
+    font-size: .8em;
+  }
+
+  .items__item-info__article-info {
+    p {
+      display: none;
+    }
+  }
+
 }

@@ -14,6 +14,10 @@
     color: $main-color;
   }
 
+  @media screen and (max-width: $mdMax){
+    padding: .2em .5em;
+  }
+
   &--lighter {
     border: 1px solid $secondary-color;
     background: transparent;
@@ -21,6 +25,9 @@
     padding: .7em 1.5em;
     font-weight: 600;
 
+    @media screen and (max-width: $mdMax){
+      padding: .2em .5em;
+    }
   }
 }
 

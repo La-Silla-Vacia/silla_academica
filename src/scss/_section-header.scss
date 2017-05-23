@@ -13,12 +13,20 @@
     font-size: 1.8em;
     color: $secondary-color;
     margin-bottom: .2em;
+
+    @media screen and (max-width: $mdMax){
+      font-size: 1.3em;
+    }
   }
 
   &__submit {
     span {
       margin-right: 1em;
       color: $expert-content-color;
+
+      @media screen and (max-width: 400px){
+        display: none;
+      }
     }
   }
 
