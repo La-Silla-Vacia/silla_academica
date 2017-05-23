@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   border-bottom: 1px solid $article-border-color;
   padding-bottom: 1em;
 
@@ -24,7 +24,7 @@
     font-weight: 400;
     font-size: .8em;
     appearance: none;
-    width: 15em;
+    width: 14em;
     background: 0;
   }
 
@@ -60,4 +60,42 @@
   &__boton {
     font-size: .75em;
   }
+}
+
+@media screen and (max-width: $mdMax) {
+  .filter-bar {
+
+    &__selector {
+      padding: .2em .5em;
+      width: 13em;
+    }
+
+    &__boton{
+      margin-top: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: $smMax) {
+    .filter-bar{
+      flex-direction: column;
+      align-items: center;
+
+      &__selector{
+        width: 100%;
+      }
+
+      &__filtros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__hijo{
+          margin-right: 0;
+        }
+      }
+
+    }
+
+
 }

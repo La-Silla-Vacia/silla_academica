@@ -15,6 +15,7 @@
 
   article:last-child{
     border-bottom: 0;
+    padding-bottom: 0;
   }
 
   &__coverbook{
@@ -101,4 +102,68 @@
     }
 
   }
+}
+
+@media screen and (max-width: $mdMax) {
+
+  .publicaciones{
+    margin: 3em auto;
+    max-width: none;
+
+    &__infobook{
+      padding-left: 1em;
+
+      h2{
+        font-size: 2em;
+        margin-top: .2em;
+      }
+
+      p{
+        font-size: 14px;
+        margin-top:1em;
+      }
+
+      .read{
+        display: none;
+      }
+
+      .share-container{
+        padding-left: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $smMax) {
+  .publicaciones {
+    margin-bottom: 1em;
+
+    article {
+      padding: 2em 0;
+    }
+
+    article:first-child{
+      padding: 0 0 2em;
+    }
+  }
+
+  .publicaciones__infobook {
+    h2 {
+      font-size: 1.6em;
+      margin-top: 0;
+    }
+    span {
+      display: none;
+    }
+
+    ul{
+      display: none;
+    }
+
+    p{
+      margin-top: .5em;
+    }
+  }
+
 }
