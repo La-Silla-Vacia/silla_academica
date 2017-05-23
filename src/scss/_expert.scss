@@ -71,20 +71,24 @@
 }
 
 @media screen and (max-width: $mdMax) {
-  .expert:not(:first-child):not(:nth-child(2)) {
-    display: none;
-  }
-  .expert:first-child{
-    padding-left: 0 ;
-  }
+  .experts--limited {
+    .expert:not(:first-child):not(:nth-child(2)) {
+      display: none;
+    }
+    .expert:first-child {
+      padding-left: 0;
+    }
 
-  .expert:nth-child(2){
-    padding-right: 0 ;
+    .expert:nth-child(2) {
+      padding-right: 0;
+    }
   }
 }
 
 @media screen and (max-width: $smMax) {
-  .expert:not(:first-child) {
-    display: none;
+  .experts--limited {
+    .expert:not(:first-child) {
+      display: none;
+    }
   }
 }

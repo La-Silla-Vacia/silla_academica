@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expertos La Silla Académica</title>
+  <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet">
+  <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/La-Silla-Vacia/lsv-interactive/master/misc/lsv-before-bootstrap.css">
+  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.5/css/bootstrap.css" media="all">
+  <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/La-Silla-Vacia/lsv-interactive/master/misc/lsv-after-bootstrap.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<div id="wrapper">
+  <header class="main-header">
+    <button class="navbar-toggle collapsed boton-secciones" data-target="#navbarCollapseSeciones" data-toggle="collapse">
+      <div class="labelsecc derecha"><a href="index.html">VOLVER</a></div>
+    </button>
+    <a class="main-header__logo" href="/"><img src="./images/logo_sillacademica.svg"></a>
+    <div class="tools">
+      <div class="search">
+        <button id="boton-buscador">Buscar</button>
+      </div>
+      <a class="login-link" href="/user/login?destination=portada">Login</a><span>|</span><a href="/user/register">Registrarse</a>
+    </div>
+    <div class="search-resp">
+      <button id="boton-buscador-resp">Buscar</button>
+    </div>
+  </header>
+
+  <div class="clearfix"></div>
+
+  <section class="row-container">
+    <div class="section-title">
+      <h3>Listado de expertos</h3>
+      <div class="section-title__submit">
+        <button class="button button">Buscar experto</button>
+      </div>
+    </div>
+
+
+    <div class="filter-bar margen-inferior">
+
+      <div class="filter-bar__filtros">
+        <div class="filter-bar__filtros__hijo">
+          <label class="filter-bar__label" for="">Experto en</label>
+          <select class="filter-bar__selector" name="" id="">
+            <option selected disabled>Seleccione una</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="filter-bar__filtros__hijo">
+          <label class="filter-bar__label" for="">Universidad</label>
+          <select class="filter-bar__selector" name="" id="">
+            <option selected disabled>Seleccione una</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-bar__abc">
+        <ul>
+          <li><a href="#"></a>A</li>
+          <li><a href="#"></a>B</li>
+          <li><a href="#"></a>C</li>
+          <li><a href="#"></a>D</li>
+          <li><a href="#"></a>G</li>
+          <li><a href="#"></a>H</li>
+          <li><a href="#"></a>I</li>
+          <li><a href="#"></a>J</li>
+          <li><a href="#"></a>K</li>
+          <li><a href="#"></a>L</li>
+          <li><a href="#"></a>M</li>
+          <li><a href="#"></a>N</li>
+          <li><a href="#"></a>O</li>
+          <li><a href="#"></a>P</li>
+          <li><a href="#"></a>Q</li>
+          <li><a href="#"></a>R</li>
+          <li><a href="#"></a>S</li>
+          <li><a href="#"></a>T</li>
+          <li><a href="#"></a>U</li>
+          <li><a href="#"></a>V</li>
+          <li><a href="#"></a>W</li>
+          <li><a href="#"></a>X</li>
+          <li><a href="#"></a>Y</li>
+          <li><a href="#"></a>Z</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="row equalHeight">
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <p>Y Wietse me enseñ´o a hackear el computador del palacio</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <p>Y Wietse me enseñ´o a hackear el computador del palacio</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <p>Y Wietse me enseñ´o a hackear el computador del palacio</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <p>Y Wietse me enseñ´o a hackear el computador del palacio</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+                <li>Dinámica del conflicto</li>
+                <li>Oríneges de los partidos políticos</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+
+      <article class="col-sm-6 col-md-3 expert">
+        <div class="expert__inner">
+          <div>
+            <div class="expert__header"><img src="./images/userimage.jpg">
+              <h3 class="expert__name">Jorge Daniel Morelo Martínez</h3>
+            </div>
+            <div class="expert__info">
+              <p>Doctorado en la universidad Torcuato Di Tella; Magister en Filosofía de la Universidad Nacional de
+                Colombia; Economista de la Universidad de los Andes.</p>
+              <h5>Líneas de investigación</h5>
+              <ul>
+                <li>Prohibicionismo y narcotráfico</li>
+              </ul>
+              <p><strong>Tel:</strong> 301 681 0617<br><strong>Correo:</strong> jmorelo@lasillavacia.com</p>
+              <h5>Horarios de atención:</h5>
+              <p>Lunes - Viernes de 8:00am a 12:00am</p>
+            </div>
+          </div>
+          <div class="expert__footer"><img src="./images/logonal2.png"></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="filter-bar abc hidden-md hidden-lg">
+      <ul>
+        <li><a href="#"></a>A</li>
+        <li><a href="#"></a>B</li>
+        <li><a href="#"></a>C</li>
+        <li><a href="#"></a>D</li>
+        <li><a href="#"></a>G</li>
+        <li><a href="#"></a>H</li>
+        <li><a href="#"></a>I</li>
+        <li><a href="#"></a>J</li>
+        <li><a href="#"></a>K</li>
+        <li><a href="#"></a>L</li>
+        <li><a href="#"></a>M</li>
+        <li><a href="#"></a>N</li>
+        <li><a href="#"></a>O</li>
+        <li><a href="#"></a>P</li>
+        <li><a href="#"></a>Q</li>
+        <li><a href="#"></a>R</li>
+        <li><a href="#"></a>S</li>
+        <li><a href="#"></a>T</li>
+        <li><a href="#"></a>U</li>
+        <li><a href="#"></a>V</li>
+        <li><a href="#"></a>W</li>
+        <li><a href="#"></a>X</li>
+        <li><a href="#"></a>Y</li>
+        <li><a href="#"></a>Z</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="clearfix"></div>
+</div>
+</body>
+</html>
