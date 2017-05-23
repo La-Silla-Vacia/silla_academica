@@ -31,6 +31,12 @@
 		"oAP": "\/expertos.html",
 		"oF": 0
 		},
+	"\/historias.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/historias.html",
+		"oF": 0
+		},
 	"\/images\/articleportada.jpg": {
 		"ft": 16384,
 		"iS": 152198,
