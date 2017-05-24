@@ -56,6 +56,15 @@
       top: 50%;
     }
   }
+
+  a {
+    text-decoration: none;
+    color: #424c5c;
+  }
+  
+  a:hover{
+    color: $main-color;
+  }
 }
 
 @media screen and (max-width: $mdMax) {

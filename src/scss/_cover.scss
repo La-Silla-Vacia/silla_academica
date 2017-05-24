@@ -57,6 +57,36 @@
       align-items: flex-end;
       justify-content: space-between;
     }
+
+    &--event {
+      background: transparent;
+      min-height: 100%;
+      width: 100%;
+      max-width: 70em;
+      padding: 3em;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-self: flex-start;
+
+      .cover__info__coverdate {
+        color: white;
+      }
+
+      .cover__info__covertitle {
+        font-size: 3.5em;
+      }
+
+      .cover__info__coverauthor {
+        font-size: 1.2em;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
   }
 
   &__logo {
@@ -75,10 +105,16 @@
   .cover__info__covertitle {
     font-size: 2.2em;
   }
+
+  .cover__info--event {
+    .cover__info__covertitle {
+      font-size: calc(1em + 3vw);
+    }
+  }
 }
 
 @media screen and (max-width: $smMax) {
-  .cover{
+  .cover {
     min-height: 250px;
   }
 
@@ -86,19 +122,30 @@
     width: 100%;
     background: rgba(255, 255, 255, 0);
     padding: 1.5em;
+
+    .cover__info__coverdate {
+      font-size: 1.2em;
+    }
+
+    .cover__info__covertitle {
+      font-size: 2em;
+    }
+
+    .cover__logo {
+      width: 150px;
+    }
   }
 
-  .cover__info__coverdate{
-    font-size: 1.2em;
+  .cover__info--event {
+    .cover__info__coverdate {
+      display: none;
+    }
+
+    .cover__info__coverauthor {
+      font-size: 1em;
+    }
   }
 
-  .cover__info__covertitle {
-    font-size: 2em;
-  }
-
-  .cover__logo{
-    width: 150px;
-  }
 
 
 }
