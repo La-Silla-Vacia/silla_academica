@@ -71,7 +71,7 @@
 }
 
 @media screen and (max-width: $mdMax) {
-  .experts--limited {
+  .expert--limited {
     .expert:not(:first-child):not(:nth-child(2)) {
       display: none;
     }
@@ -86,7 +86,7 @@
 }
 
 @media screen and (max-width: $smMax) {
-  .experts--limited {
+  .expert--limited {
     .expert:not(:first-child) {
       display: none;
     }

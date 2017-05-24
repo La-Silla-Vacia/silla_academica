@@ -15,7 +15,8 @@
         href="https://cdn.rawgit.com/La-Silla-Vacia/lsv-interactive/master/misc/lsv-after-bootstrap.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/styles.css">
-
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiAd8ee5AvozJVj8swPM98hyZx3HrLVKQ"></script>
+  <script src="js/script-min.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -54,82 +55,116 @@
 
   <div class="clearfix"></div>
 
-  <section class="container">
-    <div class="section-title border_section">
-      <h4>últimas historias</h4>
+  <section class="event-container">
+    <div class="row">
+      <div class="row-event-calendar col-sm-3">
+        <div class="row-event-calendar__logo"><img src="./images/logonal2.png"></div>
+        <div class="row-event-calendar__mini-calendar">MINI-CALENDARIO</div>
+        <h5>¡Mantente en contacto!</h5>
+        <section class="share-container" style="float: left; padding-left: 0">
+          <ul>
+            <li class="twitter redes">
+              <a href="/">
+                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_twitter-header.svg"
+                     alt="Tweet">
+              </a>
+            </li>
+            <li class="facebook redes">
+              <a href="/">
+                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_facebook-header.svg"
+                     alt="">
+              </a>
+            </li>
+            <li class="whatsapp visible-xs redes">
+              <a href="/" data-action="share/whatsapp/share">
+                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_watsup-header.svg" alt="">
+              </a>
+            </li>
+            <li class="email redes">
+              <a href="/">
+                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_mail-header.svg"
+                     alt="">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="row-event-content col-sm-6">
+        <h5>Sobre el presentador</h5>
+        <img src="./images/userimage.jpg">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ex eget mauris posuere interdum ut quis
+          nulla. Donec quis mi a lorem iaculis malesuada ac et tellus. Nam interdum tempus neque. In hac habitasse
+          platea dictumst. Praesent vel nunc auctor, porttitor lorem eu, vestibulum nibh. Cras aliquet condimentum
+          dictum. Sed id vehicula mi.</p>
+
+        <p>Donec rhoncus tempor magna nec tincidunt. Integer nec tellus enim. Proin varius vestibulum laoreet. Donec
+          euismod, ligula ac euismod maximus, leo felis laoreet mauris, a lacinia ipsum erat ut orci. Fusce leo ipsum,
+          hendrerit eu eleifend non, malesuada at nisl. Suspendisse in tincidunt velit. Fusce lobortis, purus id varius
+          finibus, enim mi fringilla dui, sed efficitur velit velit at est. Quisque nulla libero, pulvinar in varius a,
+          ultrices vel lorem. Integer quis turpis in dolor tempus volutpat at sit amet arcu. Morbi dictum dolor non nisi
+          fermentum gravida. Aliquam eget tincidunt dui, sit amet convallis eros. Sed at ex a ante pharetra pharetra.
+          Sed tincidunt dui est, at efficitur odio semper eget. Vivamus magna lorem, luctus id luctus id, condimentum a
+          lorem. Donec et justo sollicitudin, convallis justo eget, malesuada diam.</p>
+
+        <p>&nbsp;</p>
+
+        <img src="./images/userimage.jpg">
+        <p>Cras id mauris tristique, consectetur ipsum eget, ultricies nibh. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Vestibulum convallis augue at ante pellentesque
+          fermentum. Curabitur eu tempus felis. Pellentesque lectus ipsum, auctor in neque eu, euismod dapibus tortor.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id consectetur dui, id lobortis nibh. Mauris
+          odio est, dictum in massa ut, suscipit efficitur nibh. Etiam blandit fringilla mauris at vulputate. Donec diam
+          velit, laoreet a tempor quis, cursus vel augue. Donec ut dui justo. Pellentesque quis est finibus, fringilla
+          justo in, congue magna. Duis tellus enim, accumsan sit amet sagittis ac, eleifend at massa.</p>
+
+        <p>Nam dignissim enim quis est mattis, sit amet placerat arcu sollicitudin. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Aenean vehicula sem a massa tincidunt, eget viverra est eleifend. Quisque pretium
+          dui dui, vitae tempor quam accumsan vitae. Maecenas nec ligula eu arcu pharetra faucibus. In dolor ipsum,
+          tincidunt in est nec, viverra hendrerit ex. Morbi in laoreet nisl, ut porta lacus.</p>
+
+        <p>&nbsp;</p>
+
+        <img src="./images/userimage.jpg">
+        <p>Nunc volutpat, ligula eget dignissim porta, mi enim ultricies arcu, vitae consectetur nibh ipsum sed ante. In
+          elit urna, commodo et elit nec, mollis dictum nibh. Pellentesque imperdiet elit odio, vel porta urna porttitor
+          in. Maecenas malesuada diam eu nunc faucibus, sit amet aliquet mauris cursus. Sed efficitur nisi a enim
+          aliquam, sit amet lobortis arcu sagittis. Proin vel mattis dolor, id pellentesque tellus. Vestibulum tempor
+          consequat nibh, a pretium nisi suscipit sed. Sed laoreet augue et nisl aliquam, scelerisque porttitor augue
+          maximus. Vivamus eros lectus, pulvinar vel fermentum eu, posuere ac neque. Morbi placerat semper massa, sit
+          amet fermentum sapien laoreet id.</p>
+      </div>
+
+      <div class="row-event-location col-sm-3">
+        <div class="row-event-location__share"><img src="./images/share.svg">Compartir</div>
+        <div id="map" class="row-event-location__map">
+          <script type="text/javascript">
+            google.maps.event.addDomListener(window, 'load', createMarker);
+            function createMarker() {
+              // Let's also add a marker while we're at it
+              var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(4.710989, -74.072092),
+                map: map,
+                title: 'HERE IS IT YEAAAH!'
+              });
+            }
+          </script>
+        </div>
+        <div class="row-event-location__info-location">
+          <span>Espacio anfitrión</span>
+          <p><a href="/">Cra 18A No. 39A - 16 Barrio La Soledad</a></p>
+
+          <span>Fecha</span>
+          <p>Mayo 15, 2015</p>
+
+          <span>Aliados</span>
+          <p><a href="/">Universidad Nacional de Colombia - La Silla Vacía</a></p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="items">
-      <article class="row">
-        <div class="items__portada col-md-4 col-sm-4">
-          <img src="./images/articleportada.jpg">
-        </div>
-        <div class="items__item-info col-md-8 col-sm-8">
-          <div class="items__item-info__article-data">17 de mayo</div>
-          <div class="items__item-info__article-info">
-            <h5 class="category">La silla académica</h5>
-            <h2>Tres razones para sembrar árboles en Bogotá</h2>
-            <p>Trece expertos y líderes sociales de La Red de Educación responden esta pregunta.</p>
-            <div class="stats">
-              <p class="read">
-                <span>213099999999</span>
-              </p>
-              <p class="comments">
-                <span>2130</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
 
-
-      <article class="row">
-        <div class="items__portada col-md-4 col-sm-4">
-          <img src="./images/articleportada.jpg">
-        </div>
-        <div class="items__item-info col-md-8 col-sm-8">
-          <div class="items__item-info__article-data">17 de mayo</div>
-          <div class="items__item-info__article-info">
-            <h5 class="category">La silla académica</h5>
-            <h2>Tres razones para sembrar árboles en Bogotá</h2>
-            <p>Trece expertos y líderes sociales de La Red de Educación responden esta pregunta.</p>
-            <div class="stats">
-              <p class="read">
-                <span>213099999999</span>
-              </p>
-              <p class="comments">
-                <span>2130</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="row">
-        <div class="items__portada col-md-4 col-sm-4">
-          <img src="./images/articleportada.jpg">
-        </div>
-        <div class="items__item-info col-md-8 col-sm-8">
-          <div class="items__item-info__article-data">17 de mayo</div>
-          <div class="items__item-info__article-info">
-            <h5 class="category">La silla académica</h5>
-            <h2>Tres razones para sembrar árboles en Bogotá</h2>
-            <p>Trece expertos y líderes sociales de La Red de Educación responden esta pregunta.</p>
-            <div class="stats">
-              <p class="read">
-                <span>213099999999</span>
-              </p>
-              <p class="comments">
-                <span>2130</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-
-    </div>
-
-    <div class="more"><a class="more-news" href="/portada?page=1">Cargar más historias</a></div>
   </section>
 
   <div class="clearfix"></div>

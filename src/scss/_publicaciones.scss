@@ -1,137 +1,136 @@
-.publicaciones{
+.publicaciones {
   margin: 5em auto;
   width: 100%;
   max-width: 70em;
 
-  article{
+  article {
     border-bottom: 1px solid $article-border-color;
     padding: 5em 0;
     display: flex;
   }
 
-  article:first-child{
+  article:first-child {
     padding: 0 0 5em;
   }
 
-  article:last-child{
+  article:last-child {
     border-bottom: 0;
     padding-bottom: 0;
   }
 
-  &__coverbook{
+  &__coverbook {
     padding: 0;
   }
 
-  &__infobook{
+  &__infobook {
     padding-left: 4em;
 
     ul {
-      margin:0;
+      margin: 0;
       padding: 0;
       list-style-type: none;
     }
 
-    li{
+    li {
       display: inline;
       padding: 0 1.5em;
       border-right: 1px solid $tag-book-color;
       font-size: 15px;
     }
 
-    li a{
+    li a {
       text-decoration: none;
       color: $tag-book-color;
     }
 
-    li:first-child{
+    li:first-child {
       padding-left: 0;
     }
 
-    li:last-child{
+    li:last-child {
       border: 0;
     }
 
-    h2{
+    h2 {
       font-weight: 700;
       line-height: 1.3em;
     }
 
-    p{
+    p {
       font-family: 'Roboto Slab', sans-serif;
       font-size: 20px;
       font-weight: 400;
       line-height: 21px;
       margin: 0;
       margin-top: 1.3em;
-
     }
 
-    span{
+    span {
       margin-left: 1.5em;
       font-family: Roboto;
       font-size: 16px;
 
-      .usernametext{
+      .usernametext {
         text-transform: uppercase;
         margin-left: 0;
       }
     }
 
-    .read{
+    .read {
       margin-top: .7em;
 
-      span{
+      span {
         margin-left: 0;
       }
     }
 
-    .share-container{
-      float: left;
-      margin-top: 1em;
-      padding-left: 1em;
-      border-left: 1px solid $tag-book-color;
-    }
-
-    .redes{
+    .redes {
       display: inline;
       font-weight: 500;
       font-size: 15px;
-      border:0;
+      border: 0;
       padding: 0;
     }
+  }
 
+  .share-container {
+    float: left;
+    margin-top: 1em;
+    padding-left: 1em;
+    border-left: 1px solid $tag-book-color;
   }
 }
 
 @media screen and (max-width: $mdMax) {
 
-  .publicaciones{
+  .publicaciones {
     margin: 3em auto;
     max-width: none;
 
-    &__infobook{
+    &__infobook {
       padding-left: 1em;
 
-      h2{
+      h2 {
         font-size: 2em;
         margin-top: .2em;
       }
 
-      p{
+      p {
         font-size: 14px;
-        margin-top:1em;
+        margin-top: 1em;
       }
 
-      .read{
+      .read {
         display: none;
       }
+    }
 
-      .share-container{
-        padding-left: 0;
-        border: 0;
-      }
+    .share-container {
+      padding-left: 0;
+      border: 0;
     }
   }
+
 }
 
 @media screen and (max-width: $smMax) {
@@ -142,7 +141,7 @@
       padding: 2em 0;
     }
 
-    article:first-child{
+    article:first-child {
       padding: 0 0 2em;
     }
   }
@@ -156,11 +155,11 @@
       display: none;
     }
 
-    ul{
+    ul {
       display: none;
     }
 
-    p{
+    p {
       margin-top: .5em;
     }
   }

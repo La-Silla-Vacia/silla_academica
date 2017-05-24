@@ -67,6 +67,81 @@
   }
 }
 
+.row-event-calendar {
+  padding: 0 3em;
+
+  &__logo {
+    margin-bottom: 4em;
+  }
+
+  &__mini-calendar {
+    background: $main-color;
+    height: 20em;
+    padding: 2em;
+    color: white;
+    margin-bottom: 2em;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.row-event-content{
+  h5{
+    text-transform: uppercase;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  img{
+    width: 10em;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+
+  p{
+    margin-bottom: 1.5em;
+  }
+}
+
+.row-event-location{
+  margin-top: 7em;
+  padding: 0 3em;
+  font-size: .9em;
+  color: $border-color;
+
+  &__share{
+    border-top: 1px solid $article-border-color;
+    padding: 1em 0;
+
+    img{
+      width: 1.5em;
+      margin-right: .5em;
+    }
+  }
+
+  &__map {
+    height: 15em
+  }
+
+  &__info-location{
+    background: #ecf0f4;
+    padding: 1em;
+    color: $article-content-color;
+
+    span{
+      font-weight: 600;
+    }
+
+    a{
+      color: $article-content-color;
+      text-decoration: underline;
+    }
+  }
+}
+
 @media screen and (max-width: $mdMax) {
   .event__inner{
     padding: 1.2em;
