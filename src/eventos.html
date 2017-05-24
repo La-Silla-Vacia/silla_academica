@@ -15,7 +15,8 @@
         href="https://cdn.rawgit.com/La-Silla-Vacia/lsv-interactive/master/misc/lsv-after-bootstrap.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/styles.css">
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiAd8ee5AvozJVj8swPM98hyZx3HrLVKQ"></script>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiAd8ee5AvozJVj8swPM98hyZx3HrLVKQ"></script>
   <script src="js/script-min.js"></script>
 </head>
 <body>
@@ -59,38 +60,74 @@
     <div class="row">
       <div class="row-event-calendar col-sm-3">
         <div class="row-event-calendar__logo"><img src="./images/logonal2.png"></div>
-        <div class="row-event-calendar__mini-calendar">MINI-CALENDARIO</div>
+
+        <div class="row-event-location">
+          <div class="row-event-location__share"><img src="./images/share.svg">Compartir</div>
+          <div id="map" class="row-event-location__map">
+            <script type="text/javascript">
+              google.maps.event.addDomListener(window, 'load', createMarker);
+              function createMarker() {
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(4.710989, -74.072092),
+                  map: map,
+                  title: 'HERE IS IT YEAAAH!'
+                });
+              }
+            </script>
+          </div>
+          <div class="row-event-location__info-location">
+            <span>Espacio anfitrión</span>
+            <p><a href="/">Cra 18A No. 39A - 16 Barrio La Soledad</a></p>
+
+            <span>Fecha</span>
+            <p>Mayo 15, 2015</p>
+
+            <span>Aliados</span>
+            <p><a href="/">Universidad Nacional de Colombia - La Silla Vacía</a></p>
+          </div>
+        </div>
+
         <h5>¡Mantente en contacto!</h5>
         <section class="share-container" style="float: left; padding-left: 0">
           <ul>
             <li class="twitter redes">
               <a href="/">
-                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_twitter-header.svg"
-                     alt="Tweet">
+                <img
+                    src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_twitter-header.svg"
+                    alt="Tweet">
               </a>
             </li>
             <li class="facebook redes">
               <a href="/">
-                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_facebook-header.svg"
-                     alt="">
+                <img
+                    src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_facebook-header.svg"
+                    alt="">
               </a>
             </li>
             <li class="whatsapp visible-xs redes">
               <a href="/" data-action="share/whatsapp/share">
-                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_watsup-header.svg" alt="">
+                <img
+                    src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_watsup-header.svg"
+                    alt="">
               </a>
             </li>
             <li class="email redes">
               <a href="/">
-                <img src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_mail-header.svg"
-                     alt="">
+                <img
+                    src="http://www.lasillavacia.com/sites/all/themes/lasillavacia/images/iconos/iconos_mail-header.svg"
+                    alt="">
               </a>
             </li>
           </ul>
         </section>
+
+        <div class="clearfix"></div>
       </div>
 
-      <div class="row-event-content col-sm-6">
+
+
+      <div class="row-event-content col-md-7 col-sm-9">
         <h5>Sobre el presentador</h5>
         <img src="./images/userimage.jpg">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ex eget mauris posuere interdum ut quis
@@ -133,33 +170,6 @@
           consequat nibh, a pretium nisi suscipit sed. Sed laoreet augue et nisl aliquam, scelerisque porttitor augue
           maximus. Vivamus eros lectus, pulvinar vel fermentum eu, posuere ac neque. Morbi placerat semper massa, sit
           amet fermentum sapien laoreet id.</p>
-      </div>
-
-      <div class="row-event-location col-sm-3">
-        <div class="row-event-location__share"><img src="./images/share.svg">Compartir</div>
-        <div id="map" class="row-event-location__map">
-          <script type="text/javascript">
-            google.maps.event.addDomListener(window, 'load', createMarker);
-            function createMarker() {
-              // Let's also add a marker while we're at it
-              var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(4.710989, -74.072092),
-                map: map,
-                title: 'HERE IS IT YEAAAH!'
-              });
-            }
-          </script>
-        </div>
-        <div class="row-event-location__info-location">
-          <span>Espacio anfitrión</span>
-          <p><a href="/">Cra 18A No. 39A - 16 Barrio La Soledad</a></p>
-
-          <span>Fecha</span>
-          <p>Mayo 15, 2015</p>
-
-          <span>Aliados</span>
-          <p><a href="/">Universidad Nacional de Colombia - La Silla Vacía</a></p>
-        </div>
       </div>
 
     </div>

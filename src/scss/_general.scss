@@ -24,10 +24,18 @@
   .row-container {
     padding: 2em 2em;
   }
+
+  .event-container{
+    padding: 2em 2em;
+  }
 }
 
 @media screen and (max-width: $smMax) {
   .row-container {
+    padding: 1.5em 1em;
+  }
+
+  .event-container{
     padding: 1.5em 1em;
   }
 }

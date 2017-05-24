@@ -68,7 +68,7 @@
 }
 
 .row-event-calendar {
-  padding: 0 3em;
+  padding: 0 2em;
 
   &__logo {
     margin-bottom: 4em;
@@ -88,6 +88,7 @@
 }
 
 .row-event-content{
+
   h5{
     text-transform: uppercase;
     font-family: "Roboto Condensed";
@@ -108,7 +109,6 @@
 
 .row-event-location{
   margin-top: 7em;
-  padding: 0 3em;
   font-size: .9em;
   color: $border-color;
 
@@ -154,6 +154,7 @@
   .event__title{
     font-size: 1.5em;
   }
+
 }
 
 @media screen and (max-width: $smMax) {
