@@ -25,16 +25,16 @@
 		"oAP": "\/css\/styles.css.map",
 		"oF": 0
 		},
+	"\/eventos.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/eventos.html",
+		"oF": 0
+		},
 	"\/expertos.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/expertos.html",
-		"oF": 0
-		},
-	"\/historias.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/historias.html",
 		"oF": 0
 		},
 	"\/images\/articleportada.jpg": {
@@ -291,8 +291,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 516640680,
-	"displayValue": "src",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "silla_academica",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-cocaine"
 	},
 "projectSettings": {
