@@ -7,6 +7,10 @@
   }
 }
 
+.flex-row {
+  display: flex;
+}
+
 .container{
   padding-top: 2.5em;
   padding-bottom: 2.5em;
@@ -37,5 +41,15 @@
 
   .event-container{
     padding: 1.5em 1em;
+  }
+
+  .flex-row {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .flex-row {
+    justify-content: flex-start;
   }
 }
