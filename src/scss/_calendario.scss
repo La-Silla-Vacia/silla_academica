@@ -53,20 +53,63 @@
     padding: .5em;
     color: $expert-content-color;
     font-size: .8em;
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     text-align: center;
     display: inline-flex;
     justify-content: center;
     align-items: center;
   }
 
-  .dia-evento{
+  .dia-evento {
     border-radius: 50%;
     background: $main-color;
     color: white;
     cursor: pointer;
+    position: relative;
 
+    &__content {
+      position: absolute;
+      top: 2.5em;
+      display: none;
+      z-index: 100;
+    }
+
+    &--active {
+      .dia-evento__content {
+        display: block;
+        background: #c7d1db;
+
+        &__evento{
+          padding: 2em;
+          width: 20em;
+          text-align: left;
+          border-bottom:1px $secondary-color  solid;
+
+          h5{
+            font-size: 1em;
+            color: $expert-content-color;
+            margin: .5em 0;
+          }
+
+          h3{
+            font-weight: bold;
+            font-size: 1.5em;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          img{
+            filter: grayscale(100%);
+            margin-bottom: .5em;
+          }
+        }
+      }
+    }
   }
 }
+
 

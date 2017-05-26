@@ -115,6 +115,11 @@ $(document).ready(function () {
     });
   });
 
+  $('.dia-evento').click(function () {
+    $('.dia-evento').not($(this)).removeClass('dia-evento--active');
+    $(this).toggleClass('dia-evento--active');
+  });
+
 
 // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
