@@ -29,7 +29,7 @@
   }
 
   &__university {
-    color: $main-color;
+    color: #424c5c;
     font-size: .75em;
     margin: 1em 0 1em 0;
   }
@@ -64,6 +64,10 @@
   
   a:hover{
     color: $main-color;
+  }
+
+  .link{
+    color: #4386ff;
   }
 }
 

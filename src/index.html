@@ -76,7 +76,7 @@
           <h3 class="event__title"><a href="/">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</a>
           </h3>
           <div class="event__university">Pontificia Universidad Javeriana</div>
-          <span class="event__more"><a href="eventos.html">Más información ></a></span>
+          <span class="event__more"><a class="link" href="eventos.html">Más información ></a></span>
         </div>
       </article>
       <article class="col-sm-3 event">
@@ -85,7 +85,7 @@
           <h3 class="event__title"><a href="/">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</a>
           </h3>
           <div class="event__university">Pontificia Universidad Javeriana</div>
-          <span class="event__more">Más información ></span>
+          <span class="event__more"><a class="link" href="eventos.html">Más información ></a></span>
         </div>
       </article>
       <article class="col-sm-3 event">
@@ -94,7 +94,7 @@
           <h3 class="event__title"><a href="/">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</a>
           </h3>
           <div class="event__university">Pontificia Universidad Javeriana</div>
-          <span class="event__more">Más información ></span>
+          <span class="event__more"><a class="link" href="eventos.html">Más información ></a></span>
         </div>
       </article>
       <article class="col-sm-3 event">
@@ -103,7 +103,7 @@
           <h3 class="event__title"><a href="/">Cumbre Líderes por la educación 2016 bla bla bla bla bla bla bla bla</a>
           </h3>
           <div class="event__university">Pontificia Universidad Javeriana</div>
-          <span class="event__more">Más información ></span>
+          <span class="event__more"><a class="link" href="eventos.html">Más información ></a></span>
         </div>
       </article>
       <i class="event__arrow event__arrow--right"></i>
@@ -120,11 +120,11 @@
     <div class="calendar">
       <div class="month-content">
         <ul>
-          <li class="tablinks" onclick="openEvent(event, 'enero')" id="defaultOpen">Ene</li>
+          <li class="tablinks" onclick="openEvent(event, 'enero')">Ene</li>
           <li class="tablinks" onclick="openEvent(event, 'febrero')">Feb</li>
           <li class="tablinks" onclick="openEvent(event, 'marzo')">Mar</li>
           <li class="tablinks" onclick="openEvent(event, 'abril')">Abr</li>
-          <li class="tablinks" onclick="openEvent(event, 'mayo')">May</li>
+          <li class="tablinks" onclick="openEvent(event, 'mayo')" id="defaultOpen">May</li>
           <li class="tablinks" onclick="openEvent(event, 'junio')">Jun</li>
           <li class="tablinks" onclick="openEvent(event, 'julio')">Jul</li>
           <li class="tablinks" onclick="openEvent(event, 'agosto')">Ago</li>
@@ -137,8 +137,18 @@
 
       <div id="enero" class="tabcontent">
         <ul>
-          <li>
+          <li class="dia-evento">
             <span>1</span>
+            <div class="dia-evento__content">
+              <div class="dia-evento__content__evento">
+                <h5>Miércoles 1 de enero</h5>
+                <a href="eventos.html">
+                  <img src="images/coverfoto.jpg">
+                  <h3>Cumbre de Funcionarios de La Silla jajajaja y Eduardo es el hacker del canal capital</h3>
+                  <h5>Universidad Nacional de Colombia</h5>
+                </a>
+              </div>
+            </div>
           </li>
           <li>
             <span>2</span>
@@ -458,37 +468,125 @@
 
       <div id="mayo" class="tabcontent">
         <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
-          <li>11</li>
-          <li>12</li>
-          <li>13</li>
-          <li>14</li>
-          <li>15</li>
-          <li>16</li>
-          <li>17</li>
-          <li>18</li>
-          <li>19</li>
-          <li>20</li>
-          <li>21</li>
-          <li>22</li>
-          <li>23</li>
-          <li>24</li>
-          <li>25</li>
-          <li>26</li>
-          <li>27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-          <li>31</li>
+          <li>
+            <span>1</span>
+          </li>
+          <li>
+            <span>2</span>
+          </li>
+          <li>
+            <span>3</span>
+          </li>
+          <li>
+            <span>4</span>
+          </li>
+          <li>
+            <span>5</span>
+          </li>
+          <li>
+            <span>6</span>
+          </li>
+          <li>
+            <span>7</span>
+          </li>
+          <li>
+            <span>8</span>
+          </li>
+          <li>
+            <span>9</span>
+          </li>
+          <li>
+            <span>10</span>
+          </li>
+          <li>
+            <span>11</span>
+          </li>
+          <li>
+            <span>12</span>
+          </li>
+          <li>
+            <span>13</span>
+          </li>
+          <li class="dia-evento">
+            <span>14</span>
+            <div class="dia-evento__content">
+              <div class="dia-evento__content__evento">
+                <h5>Miércoles 14 de enero</h5>
+                <a href="eventos.html">
+                  <img src="images/coverfoto.jpg">
+                  <h3>Cumbre de Funcionarios de La Silla jajajaja y Eduardo es el hacker del canal capital</h3>
+                  <h5>Universidad Nacional de Colombia</h5>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>15</span>
+          </li>
+          <li>
+            <span>16</span>
+          </li>
+          <li>
+            <span>17</span>
+          </li>
+          <li>
+            <span>18</span>
+          </li>
+          <li>
+            <span>19</span>
+          </li>
+          <li class="dia-evento">
+            <span>20</span>
+            <div class="dia-evento__content">
+              <div class="dia-evento__content__evento">
+                <h5>Miércoles 20 de mayo</h5>
+                <a href="eventos.html">
+                  <img src="images/coverfoto.jpg">
+                  <h3>Cumbre de Funcionarios de La Silla</h3>
+                  <h5>Universidad Nacional de Colombia</h5>
+                </a>
+              </div>
+              <div class="dia-evento__content__evento">
+                <h5>Miércoles 20 de mayo</h5>
+                <img src="images/coverfoto.jpg">
+                <h3>Natalia no me deja trabajar porque habla mucho y me desconcentraSZ<</h3>
+                <h5>Universidad Nacional de Colombia</h5>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>21</span>
+          </li>
+          <li>
+            <span>22</span>
+          </li>
+          <li>
+            <span>23</span>
+          </li>
+          <li>
+            <span>24</span>
+          </li>
+          <li>
+            <span>25</span>
+          </li>
+          <li>
+            <span>26</span>
+          </li>
+          <li>
+            <span>27</span>
+          </li>
+          <li>
+            <span>28</span>
+          </li>
+          <li>
+            <span>29</span>
+          </li>
+          <li>
+            <span>30</span>
+          </li>
+          <li>
+            <span>31</span>
+          </li>
         </ul>
       </div>
 
