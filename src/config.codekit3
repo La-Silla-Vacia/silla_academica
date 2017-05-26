@@ -162,6 +162,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/_calendario.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_calendario.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/_cover.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -239,12 +252,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/scss\/_general.scss___jb_tmp___": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/scss\/_general.scss___jb_tmp___",
-		"oF": 0
 		},
 	"\/scss\/_header.scss": {
 		"aP": 0,

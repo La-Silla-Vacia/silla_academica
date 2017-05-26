@@ -1,0 +1,72 @@
+.calendar {
+  width: 100%;
+  margin-top: 2em;
+  font-family: 'Lato', Helvetica;
+}
+
+.month-content {
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  li {
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: .8em;
+    display: inline-block;
+    color: $expert-content-color;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: lighten(#c7d1db, 8%);
+  }
+
+  li:hover {
+    background: $main-color;
+    color: white;
+  }
+
+  li.active {
+    background: #c7d1db;
+    color: $main-color;
+  }
+}
+
+.tabcontent {
+  background: #c7d1db;
+  padding: .5em;
+  display: none;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    padding: .5em;
+    color: $expert-content-color;
+    font-size: .8em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dia-evento{
+    border-radius: 50%;
+    background: $main-color;
+    color: white;
+    cursor: pointer;
+
+  }
+}
+
