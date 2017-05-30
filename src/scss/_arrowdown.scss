@@ -1,0 +1,15 @@
+.arrow-down {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 3px solid $main-color;
+  border-top: none;
+  border-left: none;
+  transform-origin: center;
+  transform: rotate(45deg) translate(-1em, 0.5em);
+  transition: .4s ease;
+}
+
+.publicacion--active .arrow-down {
+  transform: rotate(225deg) translate(.7em, -.7em);
+}

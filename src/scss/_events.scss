@@ -1,6 +1,15 @@
 .event {
   font-family: 'Lato', sans-serif;
 
+  &-container{
+    padding: 2.5em 3.5em;
+
+    > .row > div,
+    > .row > aside {
+      float: right;
+    }
+  }
+
   &__inner {
     background: #c7d1db;
     padding: 2em;
@@ -73,6 +82,7 @@
 
 .row-event-calendar {
   padding: 0 2em;
+  display: block;
 
   &__logo {
     margin-bottom: 4em;
@@ -155,6 +165,10 @@
 
 @media screen and (max-width: $smMax) {
 
+  .event-container{
+    padding: 2em 2em;
+  }
+
   .event__title{
     height: auto;
   }
@@ -170,5 +184,14 @@
   .row article{
     padding: 0;
   }
+
+  .row-event-content{
+    padding: 0;
+  }
+
+  .row-event-calendar {
+    padding: 0;
+  }
+
 }
 

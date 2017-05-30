@@ -111,7 +111,8 @@ $(document).ready(function () {
   $('.publicacion').each(function () {
     var $this = $(this);
     $this.find('.publicacion-toggle').click(function () {
-      $this.find('.publicaciones__content').slideToggle("slow");
+      $this.toggleClass('publicacion--active');
+      $this.find('.publicaciones__content').slideToggle(400);
     });
   });
 
