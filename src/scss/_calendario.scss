@@ -1,55 +1,85 @@
 .calendar {
   width: 100%;
   margin-top: 2em;
-  font-family: 'Lato', Helvetica;
-}
+  font-family: 'Lato', sans-serif;
 
-.month-content {
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
+  &__months-container {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
-  li {
-    text-transform: uppercase;
-    font-size: .8em;
-    padding: .8em;
+  &__month {
+    padding: 0;
     display: inline-block;
     color: $expert-content-color;
     cursor: pointer;
     transition: 0.3s;
     background-color: lighten(#c7d1db, 8%);
+
+    &.calendar__month--active {
+      .calendar__month__button {
+        background: #c7d1db;
+        color: $main-color;
+
+        &:hover {
+          background: $main-color;
+          color: white;
+        }
+      }
+    }
+
+    &__button {
+      background-color: transparent;
+      border: 0;
+      text-transform: uppercase;
+      padding: .8em;
+      font-size: .8em;
+
+      &:hover {
+        background: $main-color;
+        color: white;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
   }
 
-  li:hover {
-    background: $main-color;
-    color: white;
-  }
-
-  li.active {
+  &__days-container {
     background: #c7d1db;
-    color: $main-color;
+    padding: .5em;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .dia-evento {
+      border-radius: 50%;
+      background: $main-color;
+      color: white;
+      cursor: pointer;
+      position: relative;
+
+      &__content {
+        position: absolute;
+        top: 2.5em;
+        display: none;
+        z-index: 100;
+      }
+    }
   }
-}
 
-.tabcontent {
-  background: #c7d1db;
-  padding: .5em;
-  display: none;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  li {
+  &__day {
     padding: .5em;
     color: $expert-content-color;
     font-size: .8em;
@@ -59,60 +89,62 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .dia-evento {
-    border-radius: 50%;
-    background: $main-color;
-    color: white;
-    cursor: pointer;
     position: relative;
 
-    &__content {
-      position: absolute;
-      top: 2.5em;
-      display: none;
-      z-index: 100;
+    &__button {
+      border-radius: 50%;
+      background: $main-color;
+      color: white;
+      cursor: pointer;
+      border: 0;
+      width: 2.5em;
+      height: 2.5em;
+      margin: -0.5em;
+
+      &:focus {
+        outline: none;
+      }
     }
 
-    &--active {
-      .dia-evento__content {
+    &--open {
+      .calendar__events {
         display: block;
+      }
+    }
+  }
 
+  &__events {
+    width: 20em;
+    position: absolute;
+    top: 2.5em;
+    display: none;
+    z-index: 100;
+    background-color: #c7d1db;
+    text-align: left;
 
-        &__evento {
-          padding: 2em;
-          width: 20em;
-          text-align: left;
-          border-bottom: 1px $secondary-color solid;
-          background: #c7d1db;
+    &__event {
+      padding: 2em;
+      width: 20em;
+      text-align: left;
+      border-bottom: 1px #95aec9 solid;
 
-          h5 {
-            font-size: 1em;
-            color: $expert-content-color;
-            margin: .5em 0;
-          }
+      h5 {
+        font-size: 1em;
+        color: $expert-content-color;
+        margin: .5em 0;
+      }
 
-          h3 {
-            font-weight: bold;
-            font-size: 1.5em;
-            white-space: initial;
+      h3 {
+        font-weight: bold;
+        font-size: 1.5em;
+        white-space: initial;
 
-            @media only screen and (min-width: $smMax) {
-              display: -webkit-box;
-              -webkit-line-clamp: 2;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-              text-overflow: ellipsis;
-
-
-            }
-          }
-
-          img {
-            filter: grayscale(100%);
-            margin-bottom: .5em;
-          }
+        @media only screen and (min-width: $smMax) {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
     }
@@ -126,48 +158,45 @@
 }
 
 @media screen and (max-width: $smMax) {
-  .tabcontent {
-    position: relative;
-
-    ul {
-      overflow-x: scroll;
-      display: inline-block;
-      white-space: nowrap;
-      width: 100%;
-    }
-
-    .dia-evento {
-      display: inherit;
-      position: static;
-
-      &__content {
-        top: 3.5em;
-        left: 0;
-        width: 100%;
-      }
-      &--active {
-        .dia-evento__content {
-
-          &__evento {
-            width: 100%;
-
-            h3 {
-
-            }
-
-            img {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .month-content {
-    li {
+  .calendar {
+    &__month__button {
       font-size: .66em;
       padding: .6em;
+    }
+
+    &__days-container {
+      position: relative;
+
+      ul {
+        overflow-x: scroll;
+        display: inline-block;
+        white-space: nowrap;
+        width: 100%;
+      }
+    }
+
+    &__day {
+      &--has-event {
+        display: inherit;
+        position: static;
+      }
+    }
+
+    &__events {
+      top: 3.5em;
+      left: 0;
+      width: 100%;
+
+      &__event {
+        width: 100%;
+      }
+    }
+
+    .month-content {
+      li {
+        font-size: .66em;
+        padding: .6em;
+      }
     }
   }
 }
