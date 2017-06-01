@@ -151,13 +151,14 @@ $(document).ready(function () {
 });
 
 function getEvents() {
-  var url = 'https://clients6.google.com/calendar/v3/calendars/tnt5vs3ereq39hd4km1jdphjao@group.calendar.google.com/events?calendarId=tnt5vs3ereq39hd4km1jdphjao%40group.calendar.google.com&singleEvents=true&timeZone=America%2FBogota&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2017-05-29T00%3A00%3A00-05%3A00&timeMax=2017-07-03T00%3A00%3A00-05%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs';
+  var url = 'https://clients6.google.com/calendar/v3/calendars/tnt5vs3ereq39hd4km1jdphjao@group.calendar.google.com/events?calendarId=tnt5vs3ereq39hd4km1jdphjao%40group.calendar.google.com&singleEvents=true&timeZone=America%2FBogota&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2017-05-29T00%3A00%3A00-05%3A00&timeMax=2020-07-03T00%3A00%3A00-05%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs';
   $.get(url)
     .done(function (data) {
       var events = {};
       $.each(data.items, function (index) {
         var item = data.items[index];
-        var start = item.start.dateTime;
+        var start = (item.start.date) ? item.start.date : item.start.dateTime;
+        start = (start.length === 10) ? start + 'T00:00:00-05:00' : start;
         var date = new Date(start);
         var year = date.getFullYear();
         var month = date.getMonth() + 1;
@@ -167,6 +168,7 @@ function getEvents() {
         if (!events[year][month]) events[year][month] = {};
         if (!events[year][month][day]) events[year][month][day] = [];
 
+        item.startTime = start;
         events[year][month][day].push(item);
       });
       calendarEvents = events;
@@ -210,7 +212,9 @@ function createDays() {
         var event = events[day][index];
         var title = (event.summary) ? event.summary : '';
         var location = (event.location) ? event.location : '';
-        var date = formatDate(new Date(event.start.dateTime));
+        var rDate = event.startTime;
+        var date = formatDate(new Date(rDate));
+        // console.log(rDate, date);
         var description = (event.description) ? event.description : '';
         var eventEl = $('<div class="calendar__events__event"><h5>' + date + '</h5><h3>' + title + '</h3><h5>' + location + '</h5><p>' + description +'</p></div>');
         eventsWrap.append(eventEl);
