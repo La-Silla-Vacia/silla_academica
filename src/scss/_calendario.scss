@@ -86,6 +86,8 @@
       width: 2.5em;
       height: 2.5em;
       margin: -0.5em;
+      position: relative;
+      z-index: 101;
 
       &:focus {
         outline: none;
@@ -94,7 +96,10 @@
 
     &--open {
       .calendar__events {
-        display: block;
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+        transition: visibility 0s 0s,opacity .2s ease, transform .2s ease;
       }
     }
   }
@@ -103,10 +108,13 @@
     width: 20em;
     position: absolute;
     top: 2.5em;
-    display: none;
+    visibility: hidden;
     z-index: 100;
     background-color: #c7d1db;
     text-align: left;
+    transform: translateY(-2em);
+    opacity: 0;
+    transition: visibility 0s .2s, opacity .2s ease, transform .2s ease;
 
     &__event {
       padding: 2em;
