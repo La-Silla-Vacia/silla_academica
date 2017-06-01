@@ -63,21 +63,6 @@
       display: flex;
       justify-content: space-around;
     }
-
-    .dia-evento {
-      border-radius: 50%;
-      background: $main-color;
-      color: white;
-      cursor: pointer;
-      position: relative;
-
-      &__content {
-        position: absolute;
-        top: 2.5em;
-        display: none;
-        z-index: 100;
-      }
-    }
   }
 
   &__day {
@@ -176,11 +161,9 @@
       }
     }
 
-    &__day {
-      &--has-event {
-        display: inherit;
-        position: static;
-      }
+    &__day--has-event {
+      display: inherit;
+      position: static;
     }
 
     &__events {
@@ -190,13 +173,6 @@
 
       &__event {
         width: 100%;
-      }
-    }
-
-    .month-content {
-      li {
-        font-size: .66em;
-        padding: .6em;
       }
     }
   }
