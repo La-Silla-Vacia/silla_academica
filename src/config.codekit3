@@ -176,7 +176,7 @@
 		"oA": 0,
 		"oAP": "\/js\/script-min.js",
 		"oF": 0,
-		"sC": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"\/scss\/_arrowdown.scss": {
